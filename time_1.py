@@ -38,10 +38,10 @@ def time3():
     start = perf_counter()
 
     def inner3():
-        nonlocal start  # Use the start variable from the outer function
+        nonlocal start  
         current = perf_counter()
         elapsed = current - start
-        start = current  # Update the start time for the next call
+        start = current 
         return elapsed
     
     return inner3
